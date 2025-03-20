@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little</title>
+    <link rel="stylesheet" href="./public/css/style.css"> 
+</head>
+<body>
+        <h1>Wenas</h1>
+        <h2>Compañeros</h2>
+        <h3>Bobolones</h3>
+        <h4>Alumnos</h4>
+        <h5>Tontines</h5>
+        <h6>Mequetrefes</h6>
+        Hola
+<div>
+        <table border="3" class="tabla">
+            <thead>
+                <tr>
+
+                </tr>
+            </thead>
+            
+                <tr>
+                    <th>
+                        Rut Alumno
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        A. Paterno
+                    </th>
+                    <th>
+                        A. Materno
+                    </th>
+                </tr>
+            
+                <tr>
+                    <td>22.111.258-6</td>
+                    <td>Jonathan Andres</td>
+                    <td>Julio</td>
+                    <td>Soto</td>
+                </tr>
+
+                <tr>
+                    <td>24.953.875-K</td>
+                    <td>Francisco</td>
+                    <td>Julio</td>
+                    <td>Soto</td>
+                </tr>
+            </tbody>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+        <br />
+        <br />
+        <br />
+
+        <form action="/recepcion/de/datos.php" method="post">
+            <label>
+                Nombre Alumno
+                <input type="text" name="txtNombre" />
+            </label>
+            <br />
+            <br />
+            <label>
+                Edad Alumno
+                <input type="number" name="txtEdad" />
+            </label>
+            <br />
+            <br />
+            <label>
+                Fecha Nacimiento Alumno
+                <input type="date" name="txtFecha_Nacimiento" />
+            </label>
+            <br />
+            <br />
+            <label>
+               ¿Usted es Vegano?
+                <input type="checkbox" name="chbVegano" />
+            </label>
+            <br />
+            <br />
+            <label>
+                Genero
+                 <select name="slGenero">
+                    <option>
+                        Mujer
+                    </option>
+                    <option>
+                        Hombre
+                    </option>
+                    <option>
+                        Perro
+                    </option>
+                 </select>
+             </label>
+             <br />
+            <br />
+            <label>
+                Informatica
+                <input type="radio" name="rbCarrera" value="inf"/>
+            </label>
+            <br />
+            <label>
+                Electronica
+                <input type="radio" name="rbCarrera" value="elc"/>
+            </label>
+            <br />
+            <label>
+                Redes
+                <input type="radio" name="rbCarrera" value="rds"/>
+            </label>
+            <br />
+            <br />
+            <label>
+                Avatar
+                 <input type="file" name="flAvatar" />
+             </label>
+             <br />
+             <br />
+
+             <button name="btnEnviar" type="submit"> Enviar datos </button>
+        </form>
+</body>
+</html>
